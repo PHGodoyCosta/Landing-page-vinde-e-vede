@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinde e Vede - Inscrições</title>
+    <title>Vinde e Vede 2025 | Inscrições Abertas - Seminário São Vicente Pallotti</title>
+    <meta name="description" content="Participe do Vinde e Vede 2025! Jovens são convidados a viver dias de fé, amizade e descoberta no Seminário São Vicente Pallotti. Inscreva-se já!">
+    <meta property="og:title" content="Vinde e Vede 2025 - Inscreva-se já!" />
+    <meta property="og:description" content="Dias de fé e amizade no encontro vocacional do Seminário São Vicente Pallotti" />
+    <meta property="og:image" content="https://vindeevede.live/images/logo.png" />
+    <meta property="og:url" content="https://vindeevede.live/" />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <link href="https://vjs.zencdn.net/8.23.3/video-js.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEYYR0X0G9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DEYYR0X0G9');
+    </script>
 </head>
 <body>
     <header class="bg-white border-gray-200 dark:bg-gray-900">
@@ -48,25 +63,51 @@
     <main>
         <div class="flex w-full overflow-x-hidden h-auto lg:h-[calc(100vh - 72px)] justify-center" style="background-color: var(--secoundary)">
             <div id="controls-carousel" data-carousel="slide" class="relative" data-carousel="static">
-                <div class="absolute top-7 left-1/2 transform -translate-x-1/2 z-40 text-center drop-shadow-lg font-[Montserrat] text-bold rop-shadow-lg bg-black/40 px-4 py-2 rounded-lg w-auto">
-                    <h2 class="text-4xl lg:whitespace-nowrap lg:text-7xl font-bold text-white">
+                <div class="absolute top-7 left-1/2 transform -translate-x-1/2 z-40 text-center drop-shadow-lg font-[Montserrat] text-bold rop-shadow-lg bg-white/80 px-4 py-2 rounded-lg w-9/10 md:w-auto pb-4">
+
+                    <h1 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"> Descubra a Alegria de <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Viver a Fé</span></h1>
+                    <p class="text-lg font-normal text-black-500 lg:text-xl dark:text-gray-400 mb-15">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>
+                    <a href="#inscricao" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 rounded-lg text-3xl px-5 py-2.5 text-center me-2 mb-2 font-bold">
+                    Garanta sua inscrição
+                    </a>
+
+                    <!--<h2 class="text-4xl lg:whitespace-nowrap lg:text-7xl font-bold text-white">
                         Descubra a Alegria de Viver a Fé
                     </h2>
-                    <p class="text-xl lg:text-2xl" style="color: white">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>
+                    <p class="text-xl lg:text-2xl" style="color: white">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>-->
                 </div>
             <!-- Carousel wrapper -->
-                <div class="relative h-100 lg:h-screen overflow-hidden rounded-lg w-screen">
+                <div class="relative h-[75vh] lg:h-screen overflow-hidden rounded-lg w-screen">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/images/foto.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." >
+                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
+                        <!-- Para telas até 768px (celulares) -->
+                            <source media="(max-width: 768px)" srcset="/images/foto_1_mobile.png">
+                            <!-- Para telas maiores (desktop) -->
+                            <source media="(min-width: 769px)" srcset="/images/foto.png">
+                            <img src="/images/foto.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        </picture>
+                        <!--<img src="/images/foto_1_mobile.png" class="absolute top-0 left-0 w-full h-full object-cover" alt="..." >-->
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="/images/foto_2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
+                        <!-- Para telas até 768px (celulares) -->
+                            <source media="(max-width: 768px)" srcset="/images/foto_2_mobile.png">
+                            <!-- Para telas maiores (desktop) -->
+                            <source media="(min-width: 769px)" srcset="/images/foto_2.png">
+                            <img src="/images/foto_2.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        </picture>
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/images/foto_3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
+                        <!-- Para telas até 768px (celulares) -->
+                            <source media="(max-width: 768px)" srcset="/images/foto_3_mobile.png">
+                            <!-- Para telas maiores (desktop) -->
+                            <source media="(min-width: 769px)" srcset="/images/foto_3.png">
+                            <img src="/images/foto_3.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        </picture>
                     </div>
                 </div>
                 <!-- Slider controls -->
@@ -110,19 +151,19 @@
                 </video>
             </div>
         </div>
-        <div id="inscricao" class="mt-3 pt-1" style="background-color: #e6e6e6;">
+        <div id="inscricao" class="mt-3 pt-1 pb-5" style="background-color: #e6e6e6;">
             <h1 class="text-4xl text-center mt-5 font-[Poppins] font-bold">Formulário de Inscrição</h1>
             <div class="w-full flex justify-center mt-2">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdscrcrVMGOFde_-fWgi_revDOnT2SatSBeUN-eCcxcUN__Uw/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
             </div>
-            <div id="whatsapp">
-                <h2 class="text-3xl text-center mt-5 font-[Poppins] font-bold">Entre no nosso grupo do Whatsapp!</h2>
-                <div class="mt-5 pb-2 flex justify-center">
-                    <a href="https://chat.whatsapp.com/CFb1IS1ObZQ8tRAoMFbBwr?mode=ems_wa_c" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 font-[Poppins] flex gap-2 items-center">
-                        <img src="/images/icons8-whatsapp-50.png" alt="Icon do Whatsapp" class="w-7">
-                        <span>Grupo do Whatsapp</span>
-                    </a>
-                </div>
+        </div>
+        <div id="whatsapp">
+            <h2 class="text-3xl text-center mt-5 font-[Poppins] font-bold">Entre no nosso grupo do Whatsapp!</h2>
+            <div class="mt-5 pb-2 flex justify-center">
+                <a href="https://chat.whatsapp.com/CFb1IS1ObZQ8tRAoMFbBwr?mode=ems_wa_c" target="_blank" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 font-[Poppins] flex gap-2 items-center">
+                    <img src="/images/icons8-whatsapp-50.png" alt="Icon do Whatsapp" class="w-7">
+                    <span>Grupo do Whatsapp</span>
+                </a>
             </div>
         </div>
         <div id="perguntas" class="mt-3 pt-1" style="background-color: #e6e6e6;">
