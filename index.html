@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinde e Vede</title>
+    <title>Vinde e Vede - Inscrições</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <link href="https://vjs.zencdn.net/8.23.3/video-js.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -14,7 +15,7 @@
     <header class="bg-white border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="/images/brasao_trans.png" class="h-10" alt="Flowbite Logo" />
+                <img src="/images/brasao_trans.png" class="h-10" alt="Vinde e Vede Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Vinde e Vede</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -26,40 +27,46 @@
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                <a href="#" class="block py-2 px-3 rounded-sm md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
+                <a href="#" class="block py-2 px-3 rounded-sm md:bg-transparent md:p-0 dark:text-white" aria-current="page">Início</a>
                 </li>
                 <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                <a href="#video" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Vídeo</a>
                 </li>
                 <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                <a href="#inscricao" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Inscrição</a>
                 </li>
                 <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                <a href="#whatsapp" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Whatsapp</a>
                 </li>
                 <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                <a href="#perguntas" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Perguntas Frequentes</a>
                 </li>
             </ul>
             </div>
         </div>
     </header>
     <main>
-        <div class="flex w-full h-130 justify-center" style="background-color: var(--secoundary)">
-            <div id="controls-carousel" data-carousel="slide" class="relative w-8/10 content-center" data-carousel="static">
+        <div class="flex w-full overflow-x-hidden h-auto lg:h-[calc(100vh - 72px)] justify-center" style="background-color: var(--secoundary)">
+            <div id="controls-carousel" data-carousel="slide" class="relative" data-carousel="static">
+                <div class="absolute top-7 left-1/2 transform -translate-x-1/2 z-40 text-center drop-shadow-lg font-[Montserrat] text-bold rop-shadow-lg bg-black/40 px-4 py-2 rounded-lg w-auto">
+                    <h2 class="text-4xl lg:whitespace-nowrap lg:text-7xl font-bold text-white">
+                        Descubra a Alegria de Viver a Fé
+                    </h2>
+                    <p class="text-xl lg:text-2xl" style="color: white">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>
+                </div>
             <!-- Carousel wrapper -->
-                <div class="relative overflow-hidden rounded-lg md:h-110">
+                <div class="relative h-100 lg:h-screen overflow-hidden rounded-lg w-screen">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://i.pinimg.com/736x/27/cd/5c/27cd5c43dd356482d3973ab331716c6e.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="/images/foto.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." >
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="https://i.pinimg.com/736x/2b/39/aa/2b39aa6c6ee2b1fec6aba42a0a2db894.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="/images/foto_2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://i.pinimg.com/736x/ad/03/eb/ad03ebaef860db86e5c0814448933ce4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="/images/foto_3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                 </div>
                 <!-- Slider controls -->
@@ -81,12 +88,12 @@
                 </button>
             </div>
         </div>
-        <div>
+        <div id="video">
             <h1 class="text-4xl text-center mt-5 font-[Poppins] font-bold">Saiba mais sobre o encontro!</h1>
             <div class="w-full mt-4 flex justify-center">
                 <video
                     id="my-video"
-                    class="video-js w-4/10"
+                    class="video-js w-4/10 max-w-[800px]"
                     controls
                     preload="auto"
                     poster=""
@@ -102,10 +109,101 @@
                     </p>
                 </video>
             </div>
+        </div>
+        <div id="inscricao" class="mt-3 pt-1" style="background-color: #e6e6e6;">
+            <h1 class="text-4xl text-center mt-5 font-[Poppins] font-bold">Formulário de Inscrição</h1>
+            <div class="w-full flex justify-center mt-2">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdscrcrVMGOFde_-fWgi_revDOnT2SatSBeUN-eCcxcUN__Uw/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+            <div id="whatsapp">
+                <h2 class="text-3xl text-center mt-5 font-[Poppins] font-bold">Entre no nosso grupo do Whatsapp!</h2>
+                <div class="mt-5 pb-2 flex justify-center">
+                    <a href="https://chat.whatsapp.com/CFb1IS1ObZQ8tRAoMFbBwr?mode=ems_wa_c" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 font-[Poppins] flex gap-2 items-center">
+                        <img src="/images/icons8-whatsapp-50.png" alt="Icon do Whatsapp" class="w-7">
+                        <span>Grupo do Whatsapp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="perguntas" class="mt-3 pt-1" style="background-color: #e6e6e6;">
+            <h1 class="text-4xl text-center mt-5 font-[Poppins] font-bold">Perguntas Frequentes</h1>
+
+            <div class="flex justify-center">
+                <div id="accordion-collapse" data-accordion="collapse" class="mt-5 mb-3 max-w-9/10 md:max-w-8/10 font-[Poppins] rounded-[10px]" style="background-color: white;">
+                    <h2 id="accordion-collapse-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                        <span>O que é o Vinde Vede</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Um encontro de jovens que sentem uma inquietação vocacional e desejam fazer uma experiência para conhecer o Seminário São Vicente Pallotti em Palotina/PR.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-collapse-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                        <span>Quando e Onde vão acontecer?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Em Palotina/PR no Seminário São Vicente Pallotti, no dia 26, 27 e 28 de outubro de 2025.</p>
+                        </div>
+                    </div>
+                    <h2 id="accordion-collapse-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                        <span>Qual a idade mínima/máxima para participar do encontro?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                        <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">A Idade mínima é 16 anos. Para adultos maiores de 40 anos que tambem desejam fazer uma experiência, recomendamos entrar em contato para um acompanhamento particular.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
     </main>
+    
+
+    <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900">
+        <div class="w-full max-w-screen-xl mx-auto p-4">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="/images/brasao_trans.png" class="h-10" alt="Vinde e Vede Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Vinde e Vede</span>
+                </a>
+                <!--<ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Contact</a>
+                    </li>
+                </ul>-->
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/" class="hover:underline">Seminário São Vicente Pallotti™</a>. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
     <script src="https://vjs.zencdn.net/8.23.3/video.min.js"></script>
 </body>
 </html>
