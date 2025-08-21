@@ -61,13 +61,13 @@
         </div>
     </header>
     <main>
-        <div class="flex w-full overflow-x-hidden h-auto lg:h-[calc(100vh - 72px)] justify-center" style="background-color: var(--secoundary)">
+        <div class="flex w-full overflow-x-hidden h-auto lg:h-[calc(100vh - 72px)] justify-center" style="background-color: rgb(34, 34, 34)">
             <div id="controls-carousel" data-carousel="slide" class="relative" data-carousel="static">
-                <div class="absolute top-7 left-1/2 transform -translate-x-1/2 z-40 text-center drop-shadow-lg font-[Montserrat] text-bold rop-shadow-lg bg-white/80 px-4 py-2 rounded-lg w-9/10 md:w-auto pb-4">
+                <div class="absolute top-7 left-1/2 transform -translate-x-1/2 z-40 text-center drop-shadow-lg font-[Montserrat] text-bold rop-shadow-lg px-4 py-2 rounded-lg w-9/10 md:w-auto pb-4">
 
-                    <h1 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"> Descubra a Alegria de <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Viver a Fé</span></h1>
-                    <p class="text-lg font-normal text-black-500 lg:text-xl dark:text-gray-400 mb-15">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>
-                    <a href="#inscricao" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 rounded-lg text-3xl px-5 py-2.5 text-center me-2 mb-2 font-bold">
+                    <h1 class="mb-4 text-4xl font-extrabold text-white dark:text-white md:text-5xl lg:text-6xl text-shadow-lg/30"> Descubra a Alegria de <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-shadow-none">Viver a Fé</span></h1>
+                    <p class="text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-15 text-shadow-lg/30">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>
+                    <a href="#inscricao" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 rounded-lg text-2xl lg:text-3xl px-5 py-2.5 text-center mb-2 font-bold shadow-lg">
                     Garanta sua inscrição
                     </a>
 
@@ -109,6 +109,24 @@
                             <img src="/images/foto_3.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
                         </picture>
                     </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
+                        <!-- Para telas até 768px (celulares) -->
+                            <source media="(max-width: 768px)" srcset="/images/foto_4_mobile.png">
+                            <!-- Para telas maiores (desktop) -->
+                            <source media="(min-width: 769px)" srcset="/images/foto_4.png">
+                            <img src="/images/foto_4.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        </picture>
+                    </div>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
+                        <!-- Para telas até 768px (celulares) -->
+                            <source media="(max-width: 768px)" srcset="/images/foto_5_mobile.png">
+                            <!-- Para telas maiores (desktop) -->
+                            <source media="(min-width: 769px)" srcset="/images/foto_5.png">
+                            <img src="/images/foto_5.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        </picture>
+                    </div>
                 </div>
                 <!-- Slider controls -->
                 <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -132,15 +150,21 @@
         <div id="video">
             <h1 class="text-4xl text-center mt-5 font-[Poppins] font-bold">Saiba mais sobre o encontro!</h1>
             <div class="w-full mt-4 flex justify-center">
-                <video
+
+                <video class="h-200 rounded-[10px]" controls>
+                    <source src="/images/video_padre.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!--<video
                     id="my-video"
-                    class="video-js w-4/10 max-w-[800px]"
+                    class="video-js h-200 max-w-[800px]"
                     controls
                     preload="auto"
                     poster=""
                     data-setup="{}"
                 >
-                    <source src="/images/video.mp4" type="video/mp4" />
+                    <source src="/images/video_padre.mp4" type="video/mp4" />
                     <p class="vjs-no-js">
                     To view this video please enable JavaScript, and consider upgrading to a
                     web browser that
@@ -148,17 +172,36 @@
                         >supports HTML5 video</a
                     >
                     </p>
-                </video>
+                </video>-->
             </div>
         </div>
         <div id="inscricao" class="mt-3 pt-1 pb-5" style="background-color: #e6e6e6;">
             <h1 class="text-4xl text-center mt-5 font-[Poppins] font-bold">Formulário de Inscrição</h1>
             <div class="w-full flex justify-center mt-2">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdscrcrVMGOFde_-fWgi_revDOnT2SatSBeUN-eCcxcUN__Uw/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdscrcrVMGOFde_-fWgi_revDOnT2SatSBeUN-eCcxcUN__Uw/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>-->
+
+            <iframe
+                id="JotFormIFrame-252319074236657"
+                title="Inscrição Vinde e Vede"
+                onload="window.parent.scrollTo(0,0)"
+                allowtransparency="true"
+                allow="geolocation; microphone; camera; fullscreen; payment"
+                src="https://form.jotform.com/252319074236657"
+                frameborder="0"
+                style="min-width:100%;max-width:100%;height:690px;border:none;"
+                scrolling="no"
+            >
+            </iframe>
+            <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-252319074236657']", "https://form.jotform.com/")</script>
+            
             </div>
         </div>
         <div id="whatsapp">
-            <h2 class="text-3xl text-center mt-5 font-[Poppins] font-bold">Entre no nosso grupo do Whatsapp!</h2>
+            <div class="flex w-full justify-center">
+                <img src="/images/pallotti_whatsapp.png" alt="Foto ilustrativa de Pallotti com Jovens para chamar ao grupo do whatsapp">
+            </div>
+            <h2 class="text-3xl md:text-4xl text-center mt-5 font-[Poppins] font-bold">Entre no nosso grupo do Whatsapp!</h2>
             <div class="mt-5 pb-2 flex justify-center">
                 <a href="https://chat.whatsapp.com/CFb1IS1ObZQ8tRAoMFbBwr?mode=ems_wa_c" target="_blank" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 font-[Poppins] flex gap-2 items-center">
                     <img src="/images/icons8-whatsapp-50.png" alt="Icon do Whatsapp" class="w-7">
@@ -194,7 +237,7 @@
                     </h2>
                     <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                         <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Em Palotina/PR no Seminário São Vicente Pallotti, no dia 26, 27 e 28 de outubro de 2025.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Em Palotina/PR no Seminário São Vicente Pallotti, no dia 26, 27 e 28 de setembro de 2025.</p>
                         </div>
                     </div>
                     <h2 id="accordion-collapse-heading-3">
