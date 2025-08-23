@@ -250,7 +250,7 @@
                     </h2>
                     <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
                         <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">A Idade mínima é 16 anos. Para adultos maiores de 40 anos que tambem desejam fazer uma experiência, recomendamos entrar em contato para um acompanhamento particular.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">A Idade mínima é 16 anos. Para adultos maiores de 25 anos que tambem desejam fazer uma experiência, recomendamos entrar em contato para um acompanhamento particular.</p>
                         </div>
                     </div>
                 </div>
