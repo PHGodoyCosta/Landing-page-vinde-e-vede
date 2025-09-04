@@ -147,6 +147,22 @@
                 </button>
             </div>
         </div>
+        <div id="explaination" class="pt-5 pb-6" style="background-color: #e6e6e6;">
+            <div class="w-full flex flex-col lg:flex-row items-center md:justify-center lg:gap-10 text-center lg:text-start">
+                <img src="/images/juliano_section.png" class="sm:max-w-[600px]" alt="Padre Juliano, Reitor do seminário São Vicente Pallotti">
+                <div class="max-w-[600px] mt-10 font-[Poppins] p-3">
+                    <h2 class="text-4xl font-extrabold dark:text-white">Participe do Vinde e Vede!</h2>
+                    <p class="my-4 text-lg text-gray-500">Venha fazer parte desse encontro para conhecer o Seminário São Vicente Pallotti, o lugar perfeito para discernir a sua <strong>vocação</strong> e dar passos firmes no chamado de Deus.</p>
+                    <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Nos dias <strong>26, 27 e 28</strong> de setembro de 2025, contamos com a sua presença. <strong>Garanta</strong> já a sua <strong>inscrição</strong> e venha participar dessa experiência transformadora!</p>
+                    <a href="/#inscricao" class="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline">
+                    Se inscreva aqui
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div id="video">
             <h1 class="text-4xl text-center mt-5 font-[Poppins] font-bold">Saiba mais sobre o encontro!</h1>
             <div class="w-full mt-4 flex justify-center">
@@ -259,7 +275,6 @@
         </div>
     </main>
     
-
     <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900">
         <div class="w-full max-w-screen-xl mx-auto p-4">
             <div class="sm:flex sm:items-center sm:justify-between">
