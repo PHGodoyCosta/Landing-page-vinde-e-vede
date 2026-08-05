@@ -194,9 +194,24 @@
         <div id="inscricao" class="mt-3 pt-1 pb-5" style="background-color: #e6e6e6;">
             <h1 class="text-4xl text-center mt-5 font-[Poppins] font-bold">Formulário de Inscrição</h1>
             <div class="w-full flex justify-center mt-2">
-                <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdscrcrVMGOFde_-fWgi_revDOnT2SatSBeUN-eCcxcUN__Uw/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>-->
-
+            <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdscrcrVMGOFde_-fWgi_revDOnT2SatSBeUN-eCcxcUN__Uw/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>-->
             <iframe
+                id="JotFormIFrame-262165045988669"
+                title="Inscrição Vinde e Vede 2026"
+                onload="window.parent.scrollTo(0,0)"
+                allowtransparency="true"
+                allow="geolocation; microphone; camera; fullscreen; payment"
+                src="https://form.jotform.com/262165045988669"
+                frameborder="0"
+                style="min-width:100%;max-width:100%;height:690px;border:none;"
+                scrolling="no"
+            >
+            </iframe>
+            <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262165045988669']", "https://form.jotform.com/")</script>
+        
+
+            <!-- <iframe
                 id="JotFormIFrame-252319074236657"
                 title="Inscrição Vinde e Vede"
                 onload="window.parent.scrollTo(0,0)"
@@ -209,7 +224,7 @@
             >
             </iframe>
             <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-252319074236657']", "https://form.jotform.com/")</script>
+            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-252319074236657']", "https://form.jotform.com/")</script> -->
             
             </div>
         </div>
