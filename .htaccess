@@ -1,0 +1,31 @@
+# Compressao de texto (HTML/CSS/JS). Imagens ja sao comprimidas, nao entram aqui.
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+    AddOutputFilterByType DEFLATE application/javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType image/webp .webp
+</IfModule>
+
+# Cache longo para midia e fontes: os arquivos de imagem nao mudam de nome,
+# entao se voce trocar uma foto, troque tambem o nome do arquivo (ou reduza
+# esse prazo) para o navegador buscar a versao nova.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png  "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType video/mp4  "access plus 1 year"
+    ExpiresByType font/ttf   "access plus 1 year"
+    ExpiresByType text/css   "access plus 7 days"
+    ExpiresByType text/html  "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(webp|jpg|jpeg|png|ico|mp4|ttf|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>

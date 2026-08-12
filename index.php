@@ -10,8 +10,22 @@
     <meta property="og:image" content="https://vindeevede.live/images/logo.png" />
     <meta property="og:url" content="https://vindeevede.live/" />
 
+    <!-- Conexoes antecipadas com os CDNs -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Primeira foto do carrossel: baixa em paralelo, antes dos scripts -->
+    <link rel="preload" as="image" type="image/webp" fetchpriority="high"
+          media="(max-width: 768px)" imagesizes="100vw"
+          href="/images/otim/foto_2_mobile-1080.webp"
+          imagesrcset="/images/otim/foto_2_mobile-720.webp 720w, /images/otim/foto_2_mobile-1080.webp 1080w">
+    <link rel="preload" as="image" type="image/webp" fetchpriority="high"
+          media="(min-width: 769px)" imagesizes="100vw"
+          href="/images/otim/foto_2-1920.webp"
+          imagesrcset="/images/otim/foto_2-1280.webp 1280w, /images/otim/foto_2-1920.webp 1920w">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <link href="https://vjs.zencdn.net/8.23.3/video-js.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 
@@ -62,7 +76,7 @@
     </header>
     <main>
         <div class="flex w-full overflow-x-hidden h-auto lg:h-[calc(100vh - 72px)] justify-center" style="background-color: rgb(34, 34, 34)">
-            <div id="controls-carousel" data-carousel="slide" class="relative" data-carousel="static">
+            <div id="controls-carousel" data-carousel="slide" class="relative">
                 <div class="absolute top-7 left-1/2 transform -translate-x-1/2 z-40 text-center drop-shadow-lg font-[Montserrat] text-bold rop-shadow-lg px-4 py-2 rounded-lg w-9/10 md:w-auto pb-4">
 
                     <h1 class="mb-4 text-4xl font-extrabold text-white dark:text-white md:text-5xl lg:text-6xl text-shadow-lg/30"> Descubra a Alegria de <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-shadow-none">Viver a Fé</span></h1>
@@ -81,60 +95,82 @@
                     <div class="absolute inset-0 z-20 pointer-events-none bg-gradient-to-t from-black/70 via-black/20 to-black/40"></div>
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
-                        <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_1_mobile.jpg">
-                            <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_1.jpg">
-                            <img src="/images/foto_1.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        <picture>
+                            <source type="image/webp" media="(max-width: 768px)" sizes="100vw"
+                                    srcset="/images/otim/foto_1_mobile-720.webp 720w, /images/otim/foto_1_mobile-1080.webp 1080w">
+                            <source type="image/webp" media="(min-width: 769px)" sizes="100vw"
+                                    srcset="/images/otim/foto_1-1280.webp 1280w, /images/otim/foto_1-1920.webp 1920w">
+                            <source type="image/jpeg" media="(max-width: 768px)" srcset="/images/foto_1_mobile.jpg">
+                            <img src="/images/foto_1.jpg" alt="Jovens reunidos no Vinde e Vede"
+                                 width="1920" height="1080" loading="lazy" fetchpriority="low" decoding="async"
+                                 class="absolute inset-0 w-full h-full object-cover z-10">
                         </picture>
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
-                        <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_2_mobile.jpg">
-                            <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_2.jpg">
-                            <img src="/images/foto_2.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        <div aria-hidden="true" class="absolute inset-0 w-full h-full z-0"
+                             style="background-image:url('data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoUAAsAPt1apkyopSOiMAgBEBuJQBOmUABWRxIuqVw6u8aAAP7vYygpW4xOGfvCrlP5N09Rq18Vu5JA5HI1PGsP2X/e79QiErGx0hvZ5rkSzgXvUWLii1bo/ksMAAAA');background-size:cover;background-position:center"></div>
+                        <picture>
+                            <source type="image/webp" media="(max-width: 768px)" sizes="100vw"
+                                    srcset="/images/otim/foto_2_mobile-720.webp 720w, /images/otim/foto_2_mobile-1080.webp 1080w">
+                            <source type="image/webp" media="(min-width: 769px)" sizes="100vw"
+                                    srcset="/images/otim/foto_2-1280.webp 1280w, /images/otim/foto_2-1920.webp 1920w">
+                            <source type="image/jpeg" media="(max-width: 768px)" srcset="/images/foto_2_mobile.jpg">
+                            <img src="/images/foto_2.jpg" alt="Momento de oração no Seminário São Vicente Pallotti"
+                                 width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async"
+                                 class="absolute inset-0 w-full h-full object-cover z-10">
                         </picture>
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
-                        <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_3_mobile.jpg">
-                            <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_3.jpg">
-                            <img src="/images/foto_3.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        <picture>
+                            <source type="image/webp" media="(max-width: 768px)" sizes="100vw"
+                                    srcset="/images/otim/foto_3_mobile-720.webp 720w, /images/otim/foto_3_mobile-1080.webp 1080w">
+                            <source type="image/webp" media="(min-width: 769px)" sizes="100vw"
+                                    srcset="/images/otim/foto_3-1280.webp 1280w, /images/otim/foto_3-1920.webp 1920w">
+                            <source type="image/jpeg" media="(max-width: 768px)" srcset="/images/foto_3_mobile.jpg">
+                            <img src="/images/foto_3.jpg" alt="Jovens em atividade durante o Vinde e Vede"
+                                 width="1920" height="1080" loading="lazy" fetchpriority="low" decoding="async"
+                                 class="absolute inset-0 w-full h-full object-cover z-10">
                         </picture>
                     </div>
+                    <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
-                        <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_4_mobile.jpg">
-                            <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_4.jpg">
-                            <img src="/images/foto_4.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        <picture>
+                            <source type="image/webp" media="(max-width: 768px)" sizes="100vw"
+                                    srcset="/images/otim/foto_4_mobile-720.webp 720w, /images/otim/foto_4_mobile-1080.webp 1080w">
+                            <source type="image/webp" media="(min-width: 769px)" sizes="100vw"
+                                    srcset="/images/otim/foto_4-1280.webp 1280w, /images/otim/foto_4-1920.webp 1920w">
+                            <source type="image/jpeg" media="(max-width: 768px)" srcset="/images/foto_4_mobile.jpg">
+                            <img src="/images/foto_4.jpg" alt="Confraternização entre os participantes do Vinde e Vede"
+                                 width="1920" height="1080" loading="lazy" fetchpriority="low" decoding="async"
+                                 class="absolute inset-0 w-full h-full object-cover z-10">
                         </picture>
                     </div>
+                    <!-- Item 5 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
-                        <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_5_mobile.jpg">
-                            <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_5.jpg">
-                            <img src="/images/foto_5.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        <picture>
+                            <source type="image/webp" media="(max-width: 768px)" sizes="100vw"
+                                    srcset="/images/otim/foto_5_mobile-720.webp 720w, /images/otim/foto_5_mobile-1080.webp 1080w">
+                            <source type="image/webp" media="(min-width: 769px)" sizes="100vw"
+                                    srcset="/images/otim/foto_5-1280.webp 1280w, /images/otim/foto_5-1920.webp 1920w">
+                            <source type="image/jpeg" media="(max-width: 768px)" srcset="/images/foto_5_mobile.jpg">
+                            <img src="/images/foto_5.jpg" alt="Celebração no Seminário São Vicente Pallotti"
+                                 width="1920" height="1080" loading="lazy" fetchpriority="low" decoding="async"
+                                 class="absolute inset-0 w-full h-full object-cover z-10">
                         </picture>
                     </div>
                     <!-- Item 6 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
-                        <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_6_mobile.jpg">
-                            <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_6.jpg">
-                            <img src="/images/foto_6.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        <picture>
+                            <source type="image/webp" media="(max-width: 768px)" sizes="100vw"
+                                    srcset="/images/otim/foto_6_mobile-720.webp 720w, /images/otim/foto_6_mobile-1080.webp 1080w">
+                            <source type="image/webp" media="(min-width: 769px)" sizes="100vw"
+                                    srcset="/images/otim/foto_6-1280.webp 1280w, /images/otim/foto_6-1920.webp 1920w">
+                            <source type="image/jpeg" media="(max-width: 768px)" srcset="/images/foto_6_mobile.jpg">
+                            <img src="/images/foto_6.jpg" alt="Grupo de jovens do Vinde e Vede"
+                                 width="1920" height="1080" loading="lazy" fetchpriority="low" decoding="async"
+                                 class="absolute inset-0 w-full h-full object-cover z-10">
                         </picture>
                     </div>
                 </div>
@@ -210,39 +246,22 @@
             <div class="w-full max-w-3xl bg-white rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden p-2 md:p-4">
             <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdscrcrVMGOFde_-fWgi_revDOnT2SatSBeUN-eCcxcUN__Uw/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>-->
             
-        <script type="text/javascript" src="https://www.jotform.com/jsform/262165045988669"></script>
-        <!-- <iframe
-            id="JotFormIFrame-262165045988669"
+        
+            <iframe
+            id="JotFormIFrame-262228276846668"
             title="Inscrição Vinde e Vede 2026"
             onload="window.parent.scrollTo(0,0)"
             allowtransparency="true"
             allow="geolocation; microphone; camera; fullscreen; payment"
-            src="https://form.jotform.com/262165045988669"
+            src="https://form.jotform.com/262228276846668"
             frameborder="0"
             style="min-width:100%;max-width:100%;height:690px;border:none;"
             scrolling="no"
-        >
-        </iframe>
-        <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-        <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262165045988669']", "https://form.jotform.com/")</script> -->
-        
-        
-
-            <!-- <iframe
-                id="JotFormIFrame-252319074236657"
-                title="Inscrição Vinde e Vede"
-                onload="window.parent.scrollTo(0,0)"
-                allowtransparency="true"
-                allow="geolocation; microphone; camera; fullscreen; payment"
-                src="https://form.jotform.com/252319074236657"
-                frameborder="0"
-                style="min-width:100%;max-width:100%;height:690px;border:none;"
-                scrolling="no"
             >
             </iframe>
             <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-252319074236657']", "https://form.jotform.com/")</script> -->
-
+            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262228276846668']", "https://form.jotform.com/")</script>
+    
             </div>
             </div>
         </div>
@@ -339,6 +358,24 @@
     </footer>
 
     <script src="https://vjs.zencdn.net/8.23.3/video.min.js"></script>
+    <script>
+        // As fotos 2..6 do carrossel ficam em loading="lazy" para nao competirem
+        // com a primeira. Assim que a pagina termina de carregar, buscamos elas em
+        // segundo plano para que a troca de slide seja instantanea.
+        (function () {
+            function precarregarSlides() {
+                document
+                    .querySelectorAll('#controls-carousel img[loading="lazy"]')
+                    .forEach(function (img) {
+                        img.fetchPriority = 'low';
+                        img.loading = 'eager';
+                    });
+            }
+            var agendar = window.requestIdleCallback || function (fn) { setTimeout(fn, 300); };
+            if (document.readyState === 'complete') agendar(precarregarSlides);
+            else window.addEventListener('load', function () { agendar(precarregarSlides); });
+        })();
+    </script>
 </body>
 </html>
 
