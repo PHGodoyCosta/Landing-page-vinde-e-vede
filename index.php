@@ -83,49 +83,58 @@
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <picture class="absolute top-0 left-0 w-full h-full object-cover">
                         <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_1_mobile.png">
+                            <source media="(max-width: 768px)" srcset="/images/foto_1_mobile.jpg">
                             <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto.png">
-                            <img src="/images/foto.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                            <source media="(min-width: 769px)" srcset="/images/foto_1.jpg">
+                            <img src="/images/foto_1.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
                         </picture>
-                        <!--<img src="/images/foto_1_mobile.png" class="absolute top-0 left-0 w-full h-full object-cover" alt="..." >-->
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
                         <picture class="absolute top-0 left-0 w-full h-full object-cover">
                         <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_2_mobile.png">
+                            <source media="(max-width: 768px)" srcset="/images/foto_2_mobile.jpg">
                             <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_2.png">
-                            <img src="/images/foto_2.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                            <source media="(min-width: 769px)" srcset="/images/foto_2.jpg">
+                            <img src="/images/foto_2.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
                         </picture>
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <picture class="absolute top-0 left-0 w-full h-full object-cover">
                         <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_3_mobile.png">
+                            <source media="(max-width: 768px)" srcset="/images/foto_3_mobile.jpg">
                             <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_3.png">
-                            <img src="/images/foto_3.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                            <source media="(min-width: 769px)" srcset="/images/foto_3.jpg">
+                            <img src="/images/foto_3.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
                         </picture>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <picture class="absolute top-0 left-0 w-full h-full object-cover">
                         <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_4_mobile.png">
+                            <source media="(max-width: 768px)" srcset="/images/foto_4_mobile.jpg">
                             <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_4.png">
-                            <img src="/images/foto_4.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                            <source media="(min-width: 769px)" srcset="/images/foto_4.jpg">
+                            <img src="/images/foto_4.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
                         </picture>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <picture class="absolute top-0 left-0 w-full h-full object-cover">
                         <!-- Para telas até 768px (celulares) -->
-                            <source media="(max-width: 768px)" srcset="/images/foto_5_mobile.png">
+                            <source media="(max-width: 768px)" srcset="/images/foto_5_mobile.jpg">
                             <!-- Para telas maiores (desktop) -->
-                            <source media="(min-width: 769px)" srcset="/images/foto_5.png">
-                            <img src="/images/foto_5.png" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                            <source media="(min-width: 769px)" srcset="/images/foto_5.jpg">
+                            <img src="/images/foto_5.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
+                        </picture>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <picture class="absolute top-0 left-0 w-full h-full object-cover">
+                        <!-- Para telas até 768px (celulares) -->
+                            <source media="(max-width: 768px)" srcset="/images/foto_6_mobile.jpg">
+                            <!-- Para telas maiores (desktop) -->
+                            <source media="(min-width: 769px)" srcset="/images/foto_6.jpg">
+                            <img src="/images/foto_6.jpg" alt="Imagem do carrossel" style="width:100%; height:100%; object-fit:cover;">
                         </picture>
                     </div>
                 </div>
@@ -245,7 +254,7 @@
             </div>
             <h2 class="text-3xl md:text-4xl text-center mt-8 font-[Poppins] font-bold text-white">Entre no nosso grupo do Whatsapp!</h2>
             <div class="mt-6 pb-2 flex justify-center">
-                <a href="https://chat.whatsapp.com/CFb1IS1ObZQ8tRAoMFbBwr?mode=ems_wa_c" target="_blank" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 font-[Poppins] flex gap-2 items-center transition-transform hover:scale-[1.03]">
+                <a href="https://chat.whatsapp.com/LXMKxR7021U6Oyiy6v740E?mode=gi_t" target="_blank" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 font-[Poppins] flex gap-2 items-center transition-transform hover:scale-[1.03]">
                     <img src="/images/icons8-whatsapp-50.png" alt="Icon do Whatsapp" class="w-7">
                     <span>Grupo do Whatsapp</span>
                 </a>
