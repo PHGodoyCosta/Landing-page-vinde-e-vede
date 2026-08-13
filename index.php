@@ -77,11 +77,11 @@
     <main>
         <div class="flex w-full overflow-x-hidden h-auto lg:h-[calc(100vh - 72px)] justify-center" style="background-color: rgb(34, 34, 34)">
             <div id="controls-carousel" data-carousel="slide" class="relative">
-                <div class="absolute top-7 left-1/2 transform -translate-x-1/2 z-40 text-center drop-shadow-lg font-[Montserrat] text-bold rop-shadow-lg px-4 py-2 rounded-lg w-9/10 md:w-auto pb-4">
+                <div class="absolute top-6 md:top-7 left-1/2 transform -translate-x-1/2 z-40 text-center drop-shadow-lg font-[Montserrat] text-bold rop-shadow-lg px-5 py-4 md:py-2 rounded-2xl md:rounded-lg bg-black/35 md:bg-transparent backdrop-blur-[2px] md:backdrop-blur-none w-[90%] md:w-auto pb-6 md:pb-4">
 
-                    <h1 class="mb-4 text-4xl font-extrabold text-white dark:text-white md:text-5xl lg:text-6xl text-shadow-lg/30"> Descubra a Alegria de <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-shadow-none">Viver a Fé</span></h1>
-                    <p class="text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-15 text-shadow-lg/30">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>
-                    <a href="#inscricao" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 rounded-lg text-2xl lg:text-3xl px-5 py-2.5 text-center mb-2 font-bold shadow-lg transition-all hover:scale-[1.03]">
+                    <h1 class="mb-3 md:mb-4 text-3xl sm:text-4xl font-extrabold text-white dark:text-white md:text-5xl lg:text-6xl leading-tight text-shadow-lg/30"> Descubra a Alegria de <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 text-shadow-none">Viver a Fé</span></h1>
+                    <p class="text-base sm:text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-6 md:mb-15 text-shadow-lg/30">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>
+                    <a href="#inscricao" class="hidden md:inline-flex text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 rounded-lg text-2xl lg:text-3xl px-5 py-2.5 text-center mb-2 font-bold shadow-lg transition-all hover:scale-[1.03]">
                     Garanta sua inscrição
                     </a>
 
@@ -89,6 +89,11 @@
                         Descubra a Alegria de Viver a Fé
                     </h2>
                     <p class="text-xl lg:text-2xl" style="color: white">"Disseram-lhe: 'Mestre, onde moras?'.- 'Vinde e vede' – respondeu-lhes ele." (Jo 1, 38-39)</p>-->
+                </div>
+                <div class="md:hidden absolute bottom-20 left-1/2 -translate-x-1/2 z-40 w-[90%] text-center">
+                    <a href="#inscricao" class="inline-flex text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 rounded-lg text-lg sm:text-xl px-5 py-2.5 text-center font-bold shadow-lg transition-all hover:scale-[1.03]">
+                    Garanta sua inscrição
+                    </a>
                 </div>
             <!-- Carousel wrapper -->
                 <div class="relative h-[75vh] lg:h-screen overflow-hidden rounded-lg w-screen">
@@ -214,11 +219,12 @@
             <h1 class="text-4xl text-center font-[Poppins] font-bold text-[var(--primary)]">Saiba mais sobre o encontro!</h1>
             <span class="block w-16 h-1 rounded-full bg-[var(--secoundary)] mx-auto mt-3 mb-8"></span>
             <div class="w-full px-4 flex justify-center">
-
-                <video class="h-200 max-h-[70vh] w-auto rounded-2xl shadow-2xl ring-1 ring-black/10" controls>
+                        
+                <iframe src="https://player.vimeo.com/video/1217842065?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width=504 height="964" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Vídeo de Apresentação Vinde e Vede"></iframe>
+                <!-- <video class="h-200 max-h-[70vh] w-auto rounded-2xl shadow-2xl ring-1 ring-black/10" controls>
                     <source src="/images/video_padre.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                </video> -->
 
                 <!--<video
                     id="my-video"
@@ -246,21 +252,20 @@
             <div class="w-full max-w-3xl bg-white rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden p-2 md:p-4">
             <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdscrcrVMGOFde_-fWgi_revDOnT2SatSBeUN-eCcxcUN__Uw/viewform?embedded=true" width="640" height="1756" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>-->
             
-        
             <iframe
-            id="JotFormIFrame-262228276846668"
+            id="JotFormIFrame-262238830505051"
             title="Inscrição Vinde e Vede 2026"
             onload="window.parent.scrollTo(0,0)"
             allowtransparency="true"
             allow="geolocation; microphone; camera; fullscreen; payment"
-            src="https://form.jotform.com/262228276846668"
+            src="https://form.jotform.com/262238830505051"
             frameborder="0"
             style="min-width:100%;max-width:100%;height:690px;border:none;"
             scrolling="no"
             >
             </iframe>
             <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262228276846668']", "https://form.jotform.com/")</script>
+            <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262238830505051']", "https://form.jotform.com/")</script>
     
             </div>
             </div>
